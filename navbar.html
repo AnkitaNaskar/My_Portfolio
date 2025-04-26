@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+  <!-- Loader wrapper -->
+  <div class="center">
+    <div class="ring"></div>
+    <span>loading...</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span><i class="bi bi-chevron-down"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Theme toggle icons -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16"><path d="M13.854...z"/></symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16"><path d="M8 15...z"/></symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16"><path d="M6 .278...z"/></symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16"><path d="M8 12...z"/></symbol>
+  </svg>
+
+  <!-- Theme toggle button -->
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+      <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#sun-fill"></use></svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+          <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
+          Light
+          <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
+          Dark
+          <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
+          Auto
+          <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <section id="home" class="container-fluid text-center">
+    <div class="name">
+      <h1>ANKITA NASKAR</h1>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section d-flex align-items-center">
+    <div class="container">
+      <div class="text-center text-lg-start mb-5">
+        <h2 class="section-title">About me</h2>
+      </div>
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-2">
+        <div class="about-img me-lg-4 mb-4 mb-lg-0">
+          <img src="k2.png" alt="Ankita Naskar" class="img-fluid rounded shadow" />
+        </div>
+        <div>
+          <h3 class="fw-bold">Hello, I am Ankita Naskar</h3>
+          <p class="about-text">I have a strong interest in Java, Spring Boot, SQL, and frontend tools like HTML and CSS. I’m currently pursuing B.Tech in CSE at RCC Institute of Information Technology, Kolkata. I have a good foundation in OOP, DBMS, and software development practices.</p>
+          <a href="AnkitaNaskar.pdf" class="btn btn-danger mt-3">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="about-section d-flex align-items-center">
+    <div class="container">
+      <div class="text-center text-lg-start mb-5">
+        <h2 class="section-title">My Skills</h2>
+      </div>
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-2">
+        <div class="about-img me-lg-4 mb-4 mb-lg-0"></div>
+        <div>
+          <h3 class="fw-bold">Hello, I am Ankita Naskar</h3>
+          <p class="about-text">I have a strong interest in Java, Spring Boot, SQL, and frontend tools like HTML and CSS. I’m currently pursuing B.Tech in CSE at RCC Institute of Information Technology, Kolkata. I have a good foundation in OOP, DBMS, and software development practices.</p>
+          <a href="AnkitaNaskar.pdf" class="btn btn-danger mt-3">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript for theme switching -->
+  <script>
+    (() => {
+      const getStoredTheme = () => localStorage.getItem('theme');
+      const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme();
+        if (storedTheme) {
+          return storedTheme;
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          document.documentElement.setAttribute('data-bs-theme', 
+            window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const themeToggleButtons = document.querySelectorAll('[data-bs-theme-value]');
+        const activeIcon = document.querySelector('.theme-icon-active use');
+
+        const updateActiveState = theme => {
+          themeToggleButtons.forEach(button => {
+            const isActive = button.getAttribute('data-bs-theme-value') === theme;
+            button.classList.toggle('active', isActive);
+            button.setAttribute('aria-pressed', isActive);
+            const checkIcon = button.querySelector('svg:last-child');
+            if (checkIcon) {
+              checkIcon.classList.toggle('d-none', !isActive);
+            }
+          });
+
+          if (activeIcon) {
+            let icon = '#sun-fill';
+            if (theme === 'dark') icon = '#moon-stars-fill';
+            else if (theme === 'auto') icon = '#circle-half';
+            activeIcon.setAttribute('href', icon);
+          }
+        };
+
+        themeToggleButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const selectedTheme = button.getAttribute('data-bs-theme-value');
+            setStoredTheme(selectedTheme);
+            setTheme(selectedTheme);
+            updateActiveState(selectedTheme);
+          });
+        });
+
+        setTheme(getPreferredTheme());
+        updateActiveState(getPreferredTheme());
+      });
+    })();
+  </script>
+</body>
+</html>
